@@ -1,0 +1,19 @@
+.cont_burgues{
+    display: flex;
+    justify-content: center;
+    grid-gap: 3rem;
+    margin: 8.7rem 0;
+}
+.lista_burgues{
+    display: flex;
+    grid-gap: 3rem;
+    flex-direction: row;
+    list-style: none;
+}
+.item_burgues{
+    border: 2px solid rgb(5, 5, 5);
+    border-radius: 2rem;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+    font-weight: 600;
+}

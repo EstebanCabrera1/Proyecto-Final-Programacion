@@ -1,39 +1,24 @@
 import React from 'react';
+import './listaMenu.css'
 
 
-const menuItems = [
-    { nombre: 'Item 1', disponible: true },
-    { nombre: 'Item 2', disponible: false },
-    { nombre: 'Item 3', disponible: true },
-];
-
-const listaMenu = document.getElementById('menu');
-
-menuItems.forEach(item => {
-    const listItem = document.createElement('li');
-    listItem.textContent = item.nombre;
-
-    if (item.disponible) {
-        listItem.classList.add('disponible');
-    } else {
-        listItem.classList.add('no-disponible');
-    }
-
-    listaMenu.appendChild(listItem);
-});
-
-
-function ListaMenu() {
-    return (
-        <div>
-            <li>
-                <ul></ul>
-                <ul></ul>
-                <ul></ul>
-            </li>
-        </div>
-    )
+    function ListaMenu({menuItems}) {
+        return (
+            <div className='cont_burgues'>
+                <ul className='lista_burgues'>
+                    {menuItems.map((item) => (
+                        item.disponible ? (
+                            <li className='item_burgues'>
+                                <img className='item_burgues_img' src={item.img} alt="" width={'300px'} height={'300px'}/>
+                                <p>{item.nombre}</p>
+                            </li>
+                        ) : null
+                    ))}
+                </ul>
+            </div >
+        )
+    
 }
 
 export default ListaMenu;
-
+ 
