@@ -1,0 +1,46 @@
+.contenido_header{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    align-items: center;
+    background-color: rgb(255, 194, 48);
+}
+.loguito{
+    width: 100%;
+    height: 180px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+.logo{
+    width: 275px;
+    height: 125px;
+    
+}
+.search_bar{
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    margin: 0;
+}
+
+.barra{
+    width: 75%;
+    padding: 0.5rem;
+    border-radius: 6rem;
+    border: 2px solid #000000;
+}
+
+.boton_envio{
+    background:#00d084 ;
+    color: rgb(0, 0, 0); 
+    border : 2px solid #000000;
+    margin-left: 1rem;
+    border-radius: 6rem;
+}
+.log{
+    justify-content: end;
+    align-content: center;
+    display: flex;
+    margin-right: 25%;
+}
